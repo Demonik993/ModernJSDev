@@ -3,6 +3,10 @@ console.log('export module');
 const shippingCost = 10;
 const cart = [];
 
+console.log('Start fetching');
+const dataFetch = fetch('https://jsonplaceholder.typicode.com/users ');
+console.log('Finish fetching');
+
 export const addToCart = function (product, quantity) {
   cart.push({ product, quantity });
   console.log(`${quantity} ${product}s were added to the cart.`);
