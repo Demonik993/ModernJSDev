@@ -1,4 +1,7 @@
 //export module
+
+import { cloneDeep } from 'lodash';
+
 /*
 console.log('export module');
 const shippingCost = 10;

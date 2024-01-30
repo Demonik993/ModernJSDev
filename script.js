@@ -1,4 +1,5 @@
 // import module
+import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
 /*
 import {
   addToCart,
@@ -57,3 +58,16 @@ const personalData = (function () {
 console.log(personalData);
 personalData.introduce('AWL');
 personalData.password;
+const state = {
+  cart: [
+    { product: 'bread', quantity: 1 },
+    { product: 'pizza', quantity: 2 },
+  ],
+  user: { Loged: true },
+};
+const stateClone = Object.assign({}, state);
+const stateCloneDeep = cloneDeep(state);
+state.user.Loged = false;
+console.log(state);
+console.log(stateClone);
+console.log(stateCloneDeep);
