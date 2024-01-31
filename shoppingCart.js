@@ -17,7 +17,7 @@ const totalQuantity = 99999;
 const prductsGap = 8888;
 
 export { prductsGap, totalExport, totalQuantity as tq };
-// console.log(cart);
+console.log(cart);
 
 export default function (product, quantity) {
   cart.push({ product, quantity });

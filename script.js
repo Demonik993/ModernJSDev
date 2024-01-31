@@ -1,5 +1,5 @@
 // import module
-import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+import cloneDeep from 'lodash-es';
 
 import {
   addToCart,
@@ -67,6 +67,10 @@ const state = {
 const stateClone = Object.assign({}, state);
 const stateCloneDeep = cloneDeep(state);
 state.user.Loged = false;
-console.log(state);
-console.log(stateClone);
-console.log(stateCloneDeep);
+// console.log(state);
+// console.log(stateClone);
+// console.log(stateCloneDeep);
+
+if (module.hot) {
+  module.hot.accept();
+}
