@@ -74,3 +74,8 @@ state.user.Loged = false;
 if (module.hot) {
   module.hot.accept();
 }
+Promise.resolve('TEST').then(res => console.log(res));
+console.log(state.cart.filter(el => el.quantity >= 2));
+
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
