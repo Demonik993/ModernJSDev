@@ -6,7 +6,7 @@ import {
   prductsGap as pg,
   totalExport,
   tq,
-} from './shoppingCart.js ';
+} from './shoppingCart.js';
 // import * as shoppingCart from './shoppingCart.js';
 // console.log(shoppingCart);
 // console.log(shoppingCart.totalExport);
