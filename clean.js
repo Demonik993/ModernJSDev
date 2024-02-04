@@ -77,3 +77,4 @@ const logBigExpenses = function (state, bigLimit) {
   // console.log(output);
 };
 logBigExpenses(finalBudget, 100);
+  
